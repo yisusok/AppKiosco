@@ -1,10 +1,9 @@
 const Venta=function(Productos, agregarProductos, PrecioFinal){
     this.Productos=[];
-    this.agregarProductos= function(producto)
+    agregarProductos(producto)
     {
         this.productos.push(producto)
     };
-    this.PrecioFinal=getPrecioFinal
 
     getPrecioFinal(productos)
     {   var total=0
@@ -12,5 +11,10 @@ const Venta=function(Productos, agregarProductos, PrecioFinal){
         total+=this.Productos[i].getPrecio()
         }
     return total
+    }
+
+    getCantidadProductos() 
+    {
+        return this.Productos.length;
     }
 }
