@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/load-products.css">
+</head>
+<body>
+
+    <div class="content">
+
+        <nav>
+            <ul>
+                <div class="btns">
+
+                    <a class="nav-btn" href="load-products.html">Cargar Productos</a>
+                    <a class="nav-btn" href="">Vender</a>
+                    <a class="nav-btn" href="">Inventario</a>
+                    
+                </div>
+
+                <div class="perfil-img">
+
+                </div>
+
+            </ul>
+        </nav>
+
+        <div class="carga-p">
+            <form id="Formulario-p">
+
+                <div class="label-cont" >
+                    <label for="">Cargar imagen</label>
+                    <input type="file" id="imagen">
+                </div>
+
+                <div class="label-cont" >
+                    <label for="">Cargar nombre</label>
+                    <input type="text" id="nombre" placeholder="Nombre del producto">
+                </div>
+
+                <div class="label-cont" >
+                <label for="">Cargar precio</label>
+                    <input type="number" id="precio" placeholder="precio del producto" step="any">
+                </div>
+
+                <div class="label-cont" >
+                    <label for="">Cargar marca</label>
+                    <input type="text" id="marca" placeholder="Nombre de la marca">
+                </div>
+
+                <div class="cargar-btn">
+                    <button type="submit">Cargar</button>
+                </div>
+            </form>
+
+            <div class="preview"></div>
+        </div>
+
+    </div>
+
+    <script type="module" src="../scripts/logica-de-carga-de-productos/carga.js"></script>
+    
+</body>
+</html>
