@@ -1,4 +1,5 @@
 import { Producto } from "../producto.js";
+import { Inventario } from "../inventario.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const productoForm= document.getElementById("Formulario-p")
@@ -15,9 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
         
         let nuevoProducto= new Producto(productoImg.value, productoNombre.value, productoPrecio.value, productoMarca.value)
         
-        console.log(nuevoProducto)
+        let nuevoInventario= new Inventario
+        nuevoInventario.agregarProducto(nuevoProducto)
 
-        window.api.guardarProducto(nuevoProducto);
+        console.log(nuevoInventario.productos)
+
+        
 
         productoForm.reset()
     })

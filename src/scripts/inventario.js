@@ -1,6 +1,6 @@
 // REPASAR Y CORREGIR
 
-class Inventario {
+export class Inventario {
     constructor() {
         this.productos = []; 
     }
